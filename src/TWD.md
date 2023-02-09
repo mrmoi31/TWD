@@ -11,10 +11,10 @@
 + en fonction du nv d'agressivité
     - groupe peuvent faire une guerre entre eux
     - ou s'allier
-+ joueur peut rejoindre groupe ou en crée une
-+ groupe peut avoir une exertise (farm, artisant, soldat, soins)
++ joueur peut rejoindre groupe ou en crée un
++ groupe peut avoir une expertise (farm, artisant, soldat, soins)
 + qlq survivant a des competence utils
-+ possibilité de cannibalisme 
++ possibilité de groupe cannibale
 
 ## Zombie :
 
@@ -30,13 +30,14 @@
 + nourriture ...
 + craft :
     - craft mc de base supprimer
-    - possibilité de craft des utils mais demande bcp de ressource, temps, competence...
+    - possibilité de craft des outils mais demande bcp de ressource, temps, competence...
     - outils craftable < outils lootable
 + vehicule
 
 ## Entité :
 
 + corbeaux
++ zombie lol
 
 ## Structure :
 
@@ -60,17 +61,18 @@
     - sac ajoute case en +
     - accessoire ajoute slot d'inventaire spécifique
         + holster : porte arme
-        + bandoulierre amunitions : permet de stocké +64 de munitions sur 1 slot
+        + bandoulierre a munitions : permet de stocké +64 de munitions sur 1 slot
 + nourriture perissable : + le temps passe - nourrissante
 + jauge de soif
 + jauge de fatigue
     - mal vue
     - voir flou
     - degat augmenté
-    - + de chance de choper des maladi
+    - + de chance de choper des maladie
     - halucination
 + quand dodo : chance de se faire reveiller par incident (zombie infiltré...) en fonction du lieu de dodo
 + systeme de mouvement avancé
+    - a definir
 + possibilité de faire comme les chuchoteurs
     - porter un masque
     - dirigé une troupe de zombie de l'interieur
