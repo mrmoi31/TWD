@@ -89,3 +89,4 @@
         + chaleurs (afrique)
         + zone de guerre + d'armes et munitions
 + plus le temps avance moins il y'a de loot
++ possibilité d'infuser des armes avec du sang de zombie pour infecter les survivants/autres joueurs
