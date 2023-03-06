@@ -1,79 +1,79 @@
+// On définit le package dans lequel se trouve notre classe principale
 package com.example.examplemod;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
+// On importe les classes nécessaires du modloader Forge
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
-import java.util.stream.Collectors;
-
-// The value here should match an entry in the META-INF/mods.toml file
+// On indique que cette classe est notre mod principal en utilisant l'annotation @Mod
 @Mod("examplemod")
-public class ExampleMod
-{
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+public class ExampleMod {
 
-    public ExampleMod()
-    {
-        // Register the setup method for modloading
+    // Constructeur de notre mod
+    public ExampleMod() {
+        // On enregistre notre mod avec Forge, cela permettra au modloader de le charger et de l'initialiser
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the enqueueIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
-        // Register the processIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        // Register ourselves for server and other game events we are interested in
+        // On initialise notre mod
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+    // Méthode d'initialisation du mod
+    private void setup(final FMLCommonSetupEvent event) {
+        // Code d'initialisation ici
     }
 
-    private void enqueueIMC(final InterModEnqueueEvent event)
-    {
-        // Some example code to dispatch IMC to another mod
-        InterModComms.sendTo("examplemod", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
+    // Méthode d'enregistrement des messages inter-mods
+    private void enqueueIMC(final InterModEnqueueEvent event) {
+        // Enregistrement des messages ici
     }
 
-    private void processIMC(final InterModProcessEvent event)
-    {
-        // Some example code to receive and process InterModComms from other mods
-        LOGGER.info("Got IMC {}", event.getIMCStream().
-                map(m->m.messageSupplier().get()).
-                collect(Collectors.toList()));
+    // Méthode de traitement des messages inter-mods
+    private void processIMC(final InterModProcessEvent event) {
+        // Traitement des messages ici
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
+    // Méthode d'initialisation du mod côté client
+    private void doClientStuff(final FMLClientSetupEvent event) {
+        // Code d'initialisation côté client ici
+    }
+
+    // Méthode d'initialisation du mod côté serveur
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+    public void onServerStarting(FMLServerStartingEvent event) {
+        // Code d'initialisation côté serveur ici
     }
 
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents
-    {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
-        {
-            // Register a new block here
-            LOGGER.info("HELLO from Register Block");
-        }
+    // Définition de notre bloc custom en utilisant l'annotation @ObjectHolder pour référencer son ID
+    @ObjectHolder("examplemod:example_block")
+    public static final Block EXAMPLE_BLOCK = null;
+
+    // Définition de notre item custom en utilisant l'annotation @ObjectHolder pour référencer son ID
+    @ObjectHolder("examplemod:example_item")
+    public static final Item EXAMPLE_ITEM = null;
+
+    // Méthode d'enregistrement des blocs et items custom
+    @SubscribeEvent
+    public static void registerBlocks(final RegistryEvent.Register<Block> event) {
+        // Enregistrement des blocs ici
     }
-}
+
+    @SubscribeEvent
+    public static void registerItems(final RegistryEvent.Register<Item> event) {
+        // Enregistrement des items ici
+    }
+
+    // Définition de notre entité custom
+    public static final EntityType<ExampleEntity> EXAMPLE_ENTITY = EntityType.Builder.<ExampleEntity>create(ExampleEntity::new, EntityClassification.CREATURE).build(new ResourceLocation("examplemod", "example_entity").
