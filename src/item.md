@@ -24,18 +24,19 @@
 
 
 + Armes blanches (variant infecté) :
-	- Epée
-	- Katana
-	- Batte de baseball (customisable)
-	- Scalpel
-	- Couteau cuisine/combat
-	- Hachette
-	- Masse
-	- Hache
-	- Faussille
-	- Arc médiéval/poulie
-	- Arbalète
-	- Club de golfe
+	- Epée											Durabilité : 340	Dégats : 7 	Vitesse d'attaque :1.5 /sec
+	- Katana													 310			 8					   1.25
+	- Batte de baseball (customisable)							 300			 6 					   1.5
+	- Scalpel													 190			 2 					   0.25
+	- Couteau cuisine/combat									 290			 4 					   0.5
+	- Hachette													 350			 6 					   0.9
+	- Machette													 310			 8					   1.25
+	- Masse														 400			10 						2
+	- Hache  													 400 			 9 					   1.75
+	- Faussille													 350			 6 					   0.9
+	- Arc médiéval/poulie										 400			 4 						1
+	- Arbalète													 370			 3 						2
+	- Club de golf												 280			 5 					   0.9
 
 ## Medics :
 + (Alcool)
