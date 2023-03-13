@@ -62,6 +62,7 @@
     - accessoire ajoute slot d'inventaire spécifique
         + holster : porte arme
         + bandouliere a munitions : permet de stocker +64 de munitions sur 1 slot
+    - items stocker dans vetements, comme shulkers, mais afficher dans inv
 + nourriture perissable : + le temps passe - nourrissante
 + jauge de soif
 + jauge de fatigue
