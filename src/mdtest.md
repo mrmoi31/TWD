@@ -79,3 +79,5 @@ tu prefere
     + ou
     + celle
 1. la
+
+i'm so gay dude
