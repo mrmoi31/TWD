@@ -1,33 +1,67 @@
 ---
 # Liste des items
 ---
+## Weapons :
++ Attachments :
+	- Scope x2/x4/x6/night-vision
+	- Crosse
+	- Chargeur
+	- Torche (aussi utilitaire)
+	- Laser
 
-## Fireweapons :
+
++ Fireweapons :
+	- Revolver
+	- Pistolet
+	- Assault riffle
+	- Sniper
+	- Fusil à pompe
+	- Carabine
+	- Fusil tranquilisant
+	- Grenade
+	- Cocktail molotov
+	- Bazooka
+
+
++ Armes blanches (variant infecté) :
+	- Epée
+	- Katana
+	- Batte de baseball (customisable)
+	- Scalpel
+	- Couteau cuisine/combat
+	- Hachette
+	- Masse
+	- Hache
+	- Faussille
+	- Arc médiéval/poulie
+	- Arbalète
+	- Club de golfe
 
 ## Medics :
-+ (alcool)
-+ bandages
-+ medic-kit
-+ adrenaline
-+ pince à épiler
-+ morphine (aussi drug)
-+ canabis
-+ LE REMEDE
++ (Alcool)
++ Bandages
++ Medic-kit
++ Adrenaline
++ Pince à épiler
++ Morphine (aussi drug)
++ Canabis
++ Doliprane
++ Le remède
 
 ## Food :
-+ RED MEAT :
++ Red meat :
 	- Vache
 	- Agneau
 	- Cheval
 	- Volaille
 	- Gibier
 
-+ WHITE MEAT (risque infection si mal cuit):
++ White meat (risque infection si mal cuit):
 	- Homme
 	- Poulet
 	- Porc
 
-+ VEGETABLES :
++ Vegetables :
 	- Haricots/verts
 	- Carotte
 	- Betteraves
@@ -41,7 +75,7 @@
 	- Riz/blé
 
 
-+ FRUITS :
++ Fruits :
 	- Pommes
 	- Abricot
 	- Myrtilles
@@ -55,24 +89,34 @@
 	- Poires
 	- Ananas
 
-+ FECULENTS :
++ Féculents :
 	- Patate
 	- Frites
 	- Pates
 	- Pain
 
-+ AUTRES :
++ Autres :
 	- Chocolat
 	- Paquet de bonbons
-	- Chewing-gum 
+	- Chewing-gum
+	- Chips
+	- Barre de choco
 
-+ INGREDIENTS :
++ Ingrédients :
 	-
 
 ## Drinks :
-+ SOFT :
++ Soft:
+	- Eau
+	- Jus d'orange/pomme/raisin/abricot/ananas
+	- Sirop grenadine/menthe
+	- Limonade
+	- Coca/Fanta/Orangina
+	- Chocolat chaud
+	- Thé
+	- Café
 
-+ ALCOOL :
++ Alcool :
 	- Whiskey
 	- Vodka
 	- Liqueur
@@ -96,47 +140,65 @@
 + Morphine (aussi medic)
 
 ## Vetements :
-+ HAUTS :
-	- tshirt
-	- chemise
-	- pull
-	- manteau
-	- gilet lot of pockets
-	- parka
++ Haut :
+	- Tshirt
+	- Chemise
+	- Pull
+	- Manteau
+	- Gilet lot of pockets
+	- Parka
 
-+ BAS :
-	- jogging
-	- short
-	- jean
-	- pantalon militaire
++ Bas :
+	- Jogging
+	- Short
+	- Jean
+	- Pantalon militaire
 
-+ SOUS VETEMENTS:
-	- slip
-	- bikini
-	- maillot de bain
-	- chaussettes
++ Sous-vêtements:
+	- Slip
+	- Bikini
+	- Maillot de bain
+	- Chaussettes
 
-+ CHAUSSURES :
-	- botte de rando
-	- rangers
-	- baskets
-	- sandales
-	- claquettes
++ Chaussure :
+	- Botte de rando
+	- Rangers
+	- Baskets
+	- Sandales
+	- Claquettes
+	- Roller/Patin
 
-+ ACCESSOIRES :
-	- sac cours/rando/comando
-	- protection skate-board/moto
-	- gants moto/ski
-	- gilet par balle cops/militaire/GIGN
-	- cagoule (big variété)
-	- masque de ski
-	- lunettes soleil/vue/monocle
-	- casquette
-	- bandana
-	- casque ski/vélo/moto/motoX
++ Accessoire :
+	- Sac cours/rando/comando
+	- Protection skate-board/moto
+	- Gants moto/ski
+	- Gilet par balle cops/militaire/GIGN
+	- Cagoule (big variété)
+	- Masque de ski
+	- Lunettes soleil/vue/monocle
+	- Casquette
+	- Bandana
+	- Casque ski/vélo/moto/motoX
 
 ## Vehicules :
++ Clés
++ Moto / MotoX
++ Twingo
++ Familie car
++ Bus
++ Sports car
++ Hélicopter
++ Vélo
 
 ## Utilitaires :
++ Tournevis
++ Marteau
++ Couteau
++ Clé à molette
++ Clous
++ Briquet
++ Torche
++ Houe
++ Pelle
 
 ## Ressources :
